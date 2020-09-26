@@ -5,7 +5,7 @@ import {AiFillTwitterCircle, AiFillMediumCircle, AiFillLinkedin, AiOutlineGithub
 export const CTA = () => (
     <Container
         flexDirection={["column", "column", "row", "row"]}
-        position="fixed"
+        position={["", "", "fixed", "fixed"]}
         bottom="0"
         width="100%"
         maxWidth="48rem"

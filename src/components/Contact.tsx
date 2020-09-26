@@ -10,7 +10,7 @@ import {
 
 import {useForm} from "react-hook-form";
 
-export default function Login() {
+export default function Contact() {
     const router = useRouter();
 
     const formRef = useRef(null);
@@ -43,7 +43,7 @@ export default function Login() {
             py={5}
         >
             <Flex alignItems="center" marginBottom={3} py={2}>
-                <Heading size="lg" color="gray.700">Quer entrar em contato? Envie uma mensagem</Heading>
+                <Heading size="lg" color="gray.700">quer entrar em contato? envie uma mensagem</Heading>
             </Flex>
 
             <form onSubmit={handleSubmit(onSubmit)} ref={formRef}>
@@ -54,7 +54,7 @@ export default function Login() {
                     borderRadius="md"
                     marginTop={2}
                     name="email"
-                    placeholder="E-mail"
+                    placeholder="e-mail"
                     ref={register}
                 />
 
@@ -64,7 +64,7 @@ export default function Login() {
                     borderRadius="md"
                     marginTop={2}
                     name="message"
-                    placeholder="Deixe sua mensagem"
+                    placeholder="deixe sua mensagem"
                     ref={register}
                 />
 
