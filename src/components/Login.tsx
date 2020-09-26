@@ -3,11 +3,9 @@ import {useRouter} from "next/router";
 import {
     Button,
     Flex,
-    Heading, IconButton, Input as ChakraInput,
+    Heading,
     Input,
-    InputRightElement,
-    Link,
-    Text
+    Textarea
 } from "@chakra-ui/core";
 
 import {useForm} from "react-hook-form";
@@ -34,18 +32,18 @@ export default function Login() {
     return (
         <Flex
             height="auto"
-            backgroundColor="gray.100"
+            background="linear-gradient(144deg, rgba(160,174,192,1) 0%, rgba(203,213,224,1) 35%, rgba(226,232,240,1) 100%)"
             borderRadius="md"
             flexDir="column"
             alignItems="stretch"
-            shadow="md"
+            shadow="xl"
             minW="100%"
             px={5}
             mb={[16, 16, 0, 0]}
             py={5}
         >
             <Flex alignItems="center" marginBottom={3} py={2}>
-                <Heading size="lg">Quer entrar em contato? Envie uma mensagem</Heading>
+                <Heading size="lg" color="gray.700">Quer entrar em contato? Envie uma mensagem</Heading>
             </Flex>
 
             <form onSubmit={handleSubmit(onSubmit)} ref={formRef}>
@@ -60,16 +58,19 @@ export default function Login() {
                     ref={register}
                 />
 
-                <Input
-                    name="password"
-                    type={show ? "text" : "password"}
-                    placeholder="Senha"
+                <Textarea
+                    backgroundColor="gray.200"
+                    focusBorderColor="gray.900"
+                    borderRadius="md"
+                    marginTop={2}
+                    name="message"
+                    placeholder="Deixe sua mensagem"
                     ref={register}
-                    marginTop={2}/>
+                />
 
                 <Button
                     isLoading={loading}
-                    backgroundColor="blue.600"
+                    backgroundColor="gray.600"
                     width="100%"
                     height="50px"
                     type="submit"
@@ -77,7 +78,7 @@ export default function Login() {
                     borderRadius="sm"
                     marginTop={6}
                     _hover={{
-                        backgroundColor: "blue.700"
+                        backgroundColor: "gray.700"
                     }}
                 >
                     Entrar
