@@ -9,7 +9,7 @@ export const CTA = () => (
         bottom="0"
         width="100%"
         maxWidth="48rem"
-        py={2}
+        py={12}
     >
         <ChakraLink
             isExternal

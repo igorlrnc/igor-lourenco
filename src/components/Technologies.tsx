@@ -6,7 +6,7 @@ export const Technologies = ({technologies}) => {
 
     return (
         <Flex justifyContent="center" alignItems="center" m={5}>
-            {technologies.map(technology => <Box as={technology.icon} size="32px" color={technology.color} mr={2}/>)}
+            {technologies.map((technology, index) => <Box as={technology.icon} key={index} size="32px" color={technology.color} mr={2}/>)}
         </Flex>
     )
 }
