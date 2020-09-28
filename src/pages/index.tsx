@@ -5,19 +5,21 @@ import Contact from "../components/Contact";
 import {Flex} from "@chakra-ui/core";
 import {motion} from "framer-motion";
 import {Technologies} from "../components/Technologies";
+import {AboutMe} from "../components/AboutMe";
 
 const Index = () => (
     <Container>
         <Hero/>
+        <AboutMe/>
         <Technologies/>
-        <Flex width={["90%", "90%", "50%", "50%"]} justifyContent="center">
-            <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 1.0 }}
-            >
-            <Contact/>
-            </motion.button>
-        </Flex>
+        {/*<Flex width={["90%", "90%", "50%", "50%"]} justifyContent="center">*/}
+        {/*    <motion.button*/}
+        {/*        whileHover={{ scale: 1.05 }}*/}
+        {/*        whileTap={{ scale: 1.0 }}*/}
+        {/*    >*/}
+        {/*    /!*<Contact/>*!/*/}
+        {/*    </motion.button>*/}
+        {/*</Flex>*/}
         <CTA/>
     </Container>
 )
