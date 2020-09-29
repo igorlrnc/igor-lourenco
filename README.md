@@ -12,6 +12,7 @@
 * [Chakra UI](https://chakra-ui.com/): as a design system for building interface elements and styling components;
 * [Framer Motion](https://www.framer.com/motion/): API used to animate interface components.
 
+
 ---
 
 Made With ❤️ & TypeScript by Igor Lourenço
