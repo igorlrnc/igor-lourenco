@@ -13,6 +13,5 @@
 * [Framer Motion](https://www.framer.com/motion/): API used to animate interface components.
 
 ---
-
 Made With ❤️ & TypeScript by Igor Lourenço
 
