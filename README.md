@@ -4,7 +4,7 @@
 
 --- 
 
-##### Technologies used:
+##### Used technologies:
 
 * [TypeScript](https://www.typescriptlang.org/): programming language used in the project. Extends JavaScript and adds types to variables;
 * [ReactJS](https://pt-br.reactjs.org/): JavaScript library used to build web applications;
