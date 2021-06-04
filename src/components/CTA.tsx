@@ -13,7 +13,7 @@ export const CTA = () => (
     >
         <ChakraLink
             isExternal
-            href="https://twitter.com/igorlrnco"
+            href="https://twitter.com/igorlouren_co"
             flexGrow={2}
             m={1}
             width="90%"
